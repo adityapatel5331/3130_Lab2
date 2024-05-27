@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
@@ -11,10 +11,10 @@ function App() {
 
   return (
     <Router>
-      
+
       <div className="App-header">
-      <main>
-        {/* <header className="App-header"> */}
+        <main>
+          {/* <header className="App-header"> */}
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <nav>
             <ul>
@@ -29,7 +29,7 @@ function App() {
               </li>
             </ul>
           </nav>
-        {/* </header> */}
+          {/* </header> */}
           <Routes>
             <Route path="/" element={<Home setVisits={setVisits} />} />
             <Route path="/about" element={<About visits={visits} />} />
